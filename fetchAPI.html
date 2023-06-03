@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            async function logJsonData() {
+                const response = await fetch('http://api.weatherapi.com/v1/forecast.json?key=ead138e18ecd4c94a5685551230306&q=New%york&alerts=yes');
+                const jsonData = await response.json();
+                console.log(jsonData);
+            }
+            logJsonData();
+        </script>
+    </body>
+</html>
